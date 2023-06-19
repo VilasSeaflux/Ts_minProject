@@ -16,3 +16,20 @@ function pi(num) {
 }
 // console.log(pi("hasd")); error
 console.log(pi(10));
+//lesson 4
+//If we defines our array with only one type then it will 
+//only allow that type of data into that array.
+var names = ['batman', 'captain america', 'flash'];
+names.push('iron man');
+// names.push(20) will give error;
+var mixed = ['goku', 20, 'batman', 10];
+mixed.push('vegeta');
+mixed.push(30);
+console.log(names);
+console.log(mixed);
+var data = {
+    name: "vilas",
+    age: 20
+};
+console.log(data.name);
+// data.name = 50//error
