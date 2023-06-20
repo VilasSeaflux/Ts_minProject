@@ -33,3 +33,44 @@ var data = {
 };
 console.log(data.name);
 // data.name = 50//error
+//lession 5
+// explicit
+//  let char : string;
+var num;
+//arrays 
+var ninja;
+//union types
+var union;
+//objects
+var ninObj;
+//lesson-6
+//any
+var anyType;
+anyType = "vilas";
+console.log(anyType);
+anyType = 90;
+console.log(anyType);
+var anyArr;
+//lesson-7 Function;
+var greet;
+greet = function () {
+    console.log("hello world strikes back...");
+};
+var add = function (a, b, c) {
+    if (c === void 0) { c = 10; }
+    console.log(a + b);
+    console.log(c);
+};
+function getUpper(val) {
+    return val.toUpperCase();
+}
+console.log(getUpper("string"));
+function signUpUser(name, email, password) {
+    return { name: name, email: email, password: password };
+}
+console.log(signUpUser("vilas", 'vilas.chavhan', "123"));
+function login(name, email, isPaid) {
+    if (isPaid === void 0) { isPaid = false; }
+    return { name: name, email: email, isPaid: isPaid };
+}
+console.log(login("vilas", "vilas.chavhan"));

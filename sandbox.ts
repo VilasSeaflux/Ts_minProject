@@ -76,3 +76,34 @@ anyType = 90;
 console.log(anyType);
 
 let anyArr : any[];
+
+//lesson-7 Function;
+  
+let greet : Function;
+
+greet = () => {
+    console.log("hello world strikes back...");
+}
+const add = (a : number, b : number, c : number | string = 10) => {
+    console.log(a + b);
+    console.log(c);
+}
+
+function getUpper(val: string){
+    return val.toUpperCase();
+}
+
+console.log(getUpper("string"));
+
+
+function signUpUser(name: string, email: string, password : string){
+    return {name,email,password};
+}
+
+console.log(signUpUser("vilas",'vilas.chavhan',"123"));
+
+function login(name: string, email: string, isPaid: boolean = false){
+    return {name,email,isPaid};
+}
+console.log(login("vilas","vilas.chavhan"));
+
