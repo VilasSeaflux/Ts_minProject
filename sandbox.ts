@@ -66,3 +66,13 @@ console.log(data.name);
 
  //objects
  let ninObj : object;
+
+ //lesson-6
+//any
+let anyType: any;
+anyType = "vilas";
+console.log(anyType);
+anyType = 90;
+console.log(anyType);
+
+let anyArr : any[];
