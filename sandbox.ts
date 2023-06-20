@@ -50,3 +50,19 @@ const data = {
 }
 console.log(data.name);
 // data.name = 50//error
+
+//lession 5
+
+// explicit
+//  let char : string;
+ let num : number;
+
+ //arrays 
+ let ninja : string[];
+
+ //union types
+
+ let union: (string | number | boolean)[];
+
+ //objects
+ let ninObj : object;
