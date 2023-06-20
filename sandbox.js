@@ -99,3 +99,44 @@ console.log(intro({ name: "batman", universe: "dc" }));
 // console.log(a)
 // const form = document.querySelector('.new-item-form') as HTMLFormElement;
 // console.log(form.children);
+//lession 10
+//classes and dom
+var form = document.querySelector('.new-item-form');
+var type = document.querySelector("#type");
+var tofrom = document.querySelector('#toform');
+var details = document.querySelector('#details');
+var amount = document.querySelector("#amount");
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log(type.value, tofrom.value, details.value, amount.valueAsDate);
+});
+//class
+var Invoice = /** @class */ (function () {
+    // private  client : string;
+    // public details : string;
+    // readonly amount : number;
+    //If you are using access modifiers then you can do the following
+    function Invoice(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
+    }
+    // constructor(c:string,d: string, a: number){
+    //     this.client = c;
+    //     this.details = d;
+    //     this.amount = a;
+    // }
+    Invoice.prototype.format = function () {
+        return this.client + " owes $ " + this.amount + " for " + this.details;
+    };
+    return Invoice;
+}());
+var invOne = new Invoice('batman', 'wyane mension', 5000);
+var invTwo = new Invoice('superman', 'nothing', 0);
+// console.log(invOne.details)
+var invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+console.log(invoices);
+console.log(invOne.format());
+console.log(invTwo.format());
