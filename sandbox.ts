@@ -49,4 +49,4 @@
 //     age : 20,
 // }
 // console.log(data.name);
-// data.name = 50//error
+// data.name = 50//error 
