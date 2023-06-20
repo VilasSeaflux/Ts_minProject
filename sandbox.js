@@ -74,3 +74,22 @@ function login(name, email, isPaid) {
     return { name: name, email: email, isPaid: isPaid };
 }
 console.log(login("vilas", "vilas.chavhan"));
+//function signatures
+var sayHi;
+sayHi = function (name, greeting) {
+    console.log(name + " says " + greeting);
+};
+var calc;
+calc = function (num, numTwo, action) {
+    if (action === 'add') {
+        return num + numTwo;
+    }
+    else {
+        return num - numTwo;
+    }
+};
+console.log(calc(5, 10, ''));
+var intro = function (obj) {
+    return "I am " + obj.name + " from " + obj.universe + " universe ";
+};
+console.log(intro({ name: "batman", universe: "dc" }));

@@ -107,3 +107,33 @@ function login(name: string, email: string, isPaid: boolean = false){
 }
 console.log(login("vilas","vilas.chavhan"));
 
+//function signatures
+let sayHi : (x: string, y: string) => void;
+
+sayHi = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`);
+}
+
+let calc : (a: number, b: number, c:string) => number;
+
+calc = (num: number, numTwo: number, action: string) => {
+    if(action === 'add'){
+        return num+numTwo;
+    }else{
+        return num-numTwo;
+    }
+}
+
+console.log(calc(5,10,''));
+
+type hero = {
+    name : string,
+    universe : string,
+}
+
+let intro = (obj : hero )=> {
+    return `I am ${obj.name} from ${obj.universe} universe `;
+}
+
+console.log(intro({name:"batman",universe : "dc"}));
+
