@@ -137,3 +137,13 @@ let intro = (obj : hero )=> {
 
 console.log(intro({name:"batman",universe : "dc"}));
 
+//lesson-9 DOM
+
+// const a = document.querySelector('a')!;
+
+// if(a) console.log(a.href);
+
+// console.log(a)
+
+// const form = document.querySelector('.new-item-form') as HTMLFormElement;
+// console.log(form.children);
