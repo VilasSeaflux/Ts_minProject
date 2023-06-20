@@ -74,3 +74,7 @@ function login(name, email, isPaid) {
     return { name: name, email: email, isPaid: isPaid };
 }
 console.log(login("vilas", "vilas.chavhan"));
+function createUser(user) {
+    return { name: "vilas type", email: "vilas.chavhan", isActive: false };
+}
+console.log(createUser({ name: "vilas type", email: "vilas.chavhan", isActive: false }));

@@ -107,3 +107,17 @@ function login(name: string, email: string, isPaid: boolean = false){
 }
 console.log(login("vilas","vilas.chavhan"));
 
+//lesson - 8 TYPE ALIESES
+
+  type User = {
+    name : string,
+    email: string,
+    isActive: boolean,
+  }
+
+  function createUser(user : User): User{
+    return {name :"vilas type",email :"vilas.chavhan",isActive :false};
+  }
+
+console.log(createUser({name :"vilas type",email :"vilas.chavhan",isActive :false}));
+
